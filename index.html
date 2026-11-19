@@ -1,0 +1,819 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PrimeInvest</title>
+    <meta
+      name="description"
+      content="Запустите инвестиционный старт с PrimeInvest: пошаговый разбор стратегий, прозрачная аналитика и быстрая заявка за 2 шага."
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b1220'/%3E%3Crect x='8' y='8' width='16' height='16' rx='4' fill='%2310b981'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body class="page">
+    <!-- Sticky CTA -->
+    <div
+      class="sticky-cta"
+      id="stickyCta"
+      role="region"
+      aria-label="Быстрый переход к заявке"
+    >
+      <div class="container sticky-cta__inner">
+        <div class="sticky-cta__info">
+          <span class="sticky-cta__brand">PrimeInvest</span>
+          <span class="sticky-cta__timer" data-timer-display>15:00</span>
+        </div>
+        <a
+          href="#lead-form"
+          class="button button--primary button--compact sticky-cta__button"
+          data-cta-button
+        >
+          Начать сейчас
+        </a>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container header__inner">
+        <a href="#" class="logo" aria-label="PrimeInvest — на главную">
+          <span class="logo__mark" aria-hidden="true"></span>
+          <span class="logo__text">PrimeInvest</span>
+        </a>
+
+        <nav class="nav" aria-label="Основная навигация">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#reviews" class="nav__link">Отзывы</a>
+            </li>
+            <li class="nav__item">
+              <a href="#faq" class="nav__link">FAQ</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">О нас</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a
+          href="#lead-form"
+          class="button button--ghost button--compact header__cta"
+        >
+          Оставить заявку
+        </a>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Hero -->
+      <section class="hero" id="hero" aria-labelledby="hero-title">
+        <div class="hero__media" aria-hidden="true">
+          <img
+            src="assets/images/hero-bg.jpg"
+            alt=""
+            class="hero__image"
+            width="1600"
+            height="900"
+          />
+          <div class="hero__overlay"></div>
+        </div>
+
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <p class="hero__eyebrow">Рекламный запуск потока • PrimeInvest</p>
+            <h1 class="hero__title" id="hero-title">
+              Спокойный и понятный старт в инвестициях без лишнего шума
+            </h1>
+            <p class="hero__subtitle">
+              Разбираем рабочие сценарии распределения капитала, оцениваем риски
+              до входа в сделку и помогаем выстроить системный подход шаг за
+              шагом.
+            </p>
+
+            <div class="hero__actions">
+              <a
+                href="#lead-form"
+                class="button button--primary hero__cta"
+                data-cta-button
+              >
+                Начать сейчас
+              </a>
+              <span class="hero__hint">
+                Бесплатная консультация после заполнения формы
+              </span>
+            </div>
+          </div>
+
+          <aside
+            class="timer-card"
+            aria-label="Таймер специального предложения"
+          >
+            <div class="timer-card__header">
+              <svg
+                class="timer-card__icon"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="13" r="8" />
+                <path d="M12 9v4l2.5 2.5" />
+                <path d="M9.5 2h5" />
+              </svg>
+              <span class="timer-card__label">Специальные условия запуска</span>
+            </div>
+
+            <div
+              class="timer-card__value"
+              data-timer-display
+              aria-live="polite"
+            >
+              15:00
+            </div>
+
+            <p class="timer-card__desc" data-timer-status>
+              Успейте закрепить приоритетный разбор портфеля до окончания
+              обратного отсчёта.
+            </p>
+
+            <div class="timer-card__meta">
+              <span class="timer-card__badge">Минут : Секунд</span>
+              <span class="timer-card__note">Старт с момента входа</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Слайдер -->
+      <section
+        class="section reviews"
+        id="reviews"
+        aria-labelledby="reviews-title"
+      >
+        <div class="container">
+          <div class="section__header reviews__header">
+            <div>
+              <p class="section__eyebrow">Опыт участников</p>
+              <h2 class="section__title" id="reviews-title">Отзывы клиентов</h2>
+            </div>
+
+            <div class="reviews__controls" aria-label="Навигация по отзывам">
+              <button
+                type="button"
+                class="slider-arrow"
+                data-slider-prev
+                aria-label="Предыдущий отзыв"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M15 18l-6-6 6-6" />
+                </svg>
+              </button>
+              <button
+                type="button"
+                class="slider-arrow"
+                data-slider-next
+                aria-label="Следующий отзыв"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M9 18l6-6-6-6" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="slider" data-reviews-slider>
+            <div class="slider__viewport" data-slider-viewport>
+              <div class="slider__track" data-slider-track>
+                <article class="review-card slider__slide">
+                  <div class="review-card__author">
+                    <img
+                      src="assets/images/review-1.jpg"
+                      alt="Фото Артёма Ковалёва"
+                      class="review-card__avatar"
+                      width="56"
+                      height="56"
+                      loading="lazy"
+                    />
+                    <div>
+                      <h3 class="review-card__name">Артём Ковалёв</h3>
+                      <p class="review-card__role">Продуктовый аналитик</p>
+                    </div>
+                  </div>
+                  <p class="review-card__text">
+                    «Раньше откладывал деньги хаотично и боялся просадок. На
+                    разборе с PrimeInvest разложили горизонты и доли по полочкам
+                    — стало гораздо спокойнее принимать решения».
+                  </p>
+                </article>
+
+                <article class="review-card slider__slide">
+                  <div class="review-card__author">
+                    <img
+                      src="assets/images/review-2.jpg"
+                      alt="Фото Марины Литвиненко"
+                      class="review-card__avatar"
+                      width="56"
+                      height="56"
+                      loading="lazy"
+                    />
+                    <div>
+                      <h3 class="review-card__name">Марина Литвиненко</h3>
+                      <p class="review-card__role">Операционный менеджер</p>
+                    </div>
+                  </div>
+                  <p class="review-card__text">
+                    «Понравилось, что нет обещаний быстрых иксов. Всё по делу:
+                    подушка безопасности, базовые инструменты и понятный план на
+                    ближайший год».
+                  </p>
+                </article>
+
+                <article class="review-card slider__slide">
+                  <div class="review-card__author">
+                    <img
+                      src="assets/images/review-3.jpg"
+                      alt="Фото Дениса Савченко"
+                      class="review-card__avatar"
+                      width="56"
+                      height="56"
+                      loading="lazy"
+                    />
+                    <div>
+                      <h3 class="review-card__name">Денис Савченко</h3>
+                      <p class="review-card__role">Владелец небольшой студии</p>
+                    </div>
+                  </div>
+                  <p class="review-card__text">
+                    «Заявку оставил буквально за пару минут. На встрече
+                    разобрали ошибки, которые я делал раньше, и собрали
+                    аккуратную структуру под мои цели».
+                  </p>
+                </article>
+
+                <article class="review-card slider__slide">
+                  <div class="review-card__author">
+                    <img
+                      src="assets/images/review-4.jpg"
+                      alt="Фото Ирины Бондарь"
+                      class="review-card__avatar"
+                      width="56"
+                      height="56"
+                      loading="lazy"
+                    />
+                    <div>
+                      <h3 class="review-card__name">Ирина Бондарь</h3>
+                      <p class="review-card__role">Финансовый координатор</p>
+                    </div>
+                  </div>
+                  <p class="review-card__text">
+                    «Чёткая подача без перегруза терминологией. Отличный формат
+                    для тех, кто хочет навести порядок в личном капитале и не
+                    тратить вечера на информационный шум».
+                  </p>
+                </article>
+              </div>
+            </div>
+
+            <div
+              class="slider__dots"
+              data-slider-dots
+              role="tablist"
+              aria-label="Выбор отзыва"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section faq" id="faq" aria-labelledby="faq-title">
+        <div class="container faq__inner">
+          <div class="section__header faq__header">
+            <p class="section__eyebrow">Частые вопросы</p>
+            <h2 class="section__title" id="faq-title">Ответы на главное</h2>
+            <p class="section__subtitle">
+              Собрали ключевые детали о формате участия, старте и обработке
+              заявок.
+            </p>
+          </div>
+
+          <div class="accordion" data-accordion>
+            <div class="accordion__item">
+              <h3 class="accordion__heading">
+                <button
+                  type="button"
+                  class="accordion__trigger"
+                  aria-expanded="false"
+                  aria-controls="faq-panel-1"
+                  id="faq-trigger-1"
+                >
+                  <span class="accordion__question">
+                    Нужен ли большой стартовый капитал для участия?
+                  </span>
+                  <span class="accordion__icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div
+                class="accordion__panel"
+                id="faq-panel-1"
+                role="region"
+                aria-labelledby="faq-trigger-1"
+              >
+                <div class="accordion__body">
+                  <p class="accordion__text">
+                    Нет. Главная задача на старте — выстроить регулярную
+                    привычку, определить комфортный риск-профиль и подобрать
+                    инструменты, которые соответствуют вашим текущим
+                    возможностям и горизонту планирования.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion__item">
+              <h3 class="accordion__heading">
+                <button
+                  type="button"
+                  class="accordion__trigger"
+                  aria-expanded="false"
+                  aria-controls="faq-panel-2"
+                  id="faq-trigger-2"
+                >
+                  <span class="accordion__question">
+                    Что происходит после того как закончится 15-минутный таймер?
+                  </span>
+                  <span class="accordion__icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div
+                class="accordion__panel"
+                id="faq-panel-2"
+                role="region"
+                aria-labelledby="faq-trigger-2"
+              >
+                <div class="accordion__body">
+                  <p class="accordion__text">
+                    Форма заявки остаётся доступной, но кнопка меняет статус на
+                    «Последний шанс», чтобы напомнить о приоритетной очереди
+                    разбора в рамках текущего рекламного запуска.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion__item">
+              <h3 class="accordion__heading">
+                <button
+                  type="button"
+                  class="accordion__trigger"
+                  aria-expanded="false"
+                  aria-controls="faq-panel-3"
+                  id="faq-trigger-3"
+                >
+                  <span class="accordion__question">
+                    Подойдёт ли формат, если я раньше не инвестировал?
+                  </span>
+                  <span class="accordion__icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div
+                class="accordion__panel"
+                id="faq-panel-3"
+                role="region"
+                aria-labelledby="faq-trigger-3"
+              >
+                <div class="accordion__body">
+                  <p class="accordion__text">
+                    Да, материал построен так, чтобы новичок не утонул в сложных
+                    терминах: мы начинаем с базовых принципов, диверсификации и
+                    защиты от типичных эмоциональных ошибок.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion__item">
+              <h3 class="accordion__heading">
+                <button
+                  type="button"
+                  class="accordion__trigger"
+                  aria-expanded="false"
+                  aria-controls="faq-panel-4"
+                  id="faq-trigger-4"
+                >
+                  <span class="accordion__question">
+                    Сколько времени занимает заполнение заявки?
+                  </span>
+                  <span class="accordion__icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div
+                class="accordion__panel"
+                id="faq-panel-4"
+                role="region"
+                aria-labelledby="faq-trigger-4"
+              >
+                <div class="accordion__body">
+                  <p class="accordion__text">
+                    Форма разделена на два коротких шага: сначала имя и email,
+                    затем контактный телефон с маской и подтверждение согласия.
+                    Обычно это занимает меньше минуты.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion__item">
+              <h3 class="accordion__heading">
+                <button
+                  type="button"
+                  class="accordion__trigger"
+                  aria-expanded="false"
+                  aria-controls="faq-panel-5"
+                  id="faq-trigger-5"
+                >
+                  <span class="accordion__question">
+                    Как быстро со мной свяжутся после отправки формы?
+                  </span>
+                  <span class="accordion__icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div
+                class="accordion__panel"
+                id="faq-panel-5"
+                role="region"
+                aria-labelledby="faq-trigger-5"
+              >
+                <div class="accordion__body">
+                  <p class="accordion__text">
+                    После появления окна «Заявка принята» специалист свяжется с
+                    вами по указанным контактам в рабочее время, чтобы уточнить
+                    цели и согласовать удобное время для созвона.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion__item">
+              <h3 class="accordion__heading">
+                <button
+                  type="button"
+                  class="accordion__trigger"
+                  aria-expanded="false"
+                  aria-controls="faq-panel-6"
+                  id="faq-trigger-6"
+                >
+                  <span class="accordion__question">
+                    Гарантируется ли конкретная доходность?
+                  </span>
+                  <span class="accordion__icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div
+                class="accordion__panel"
+                id="faq-panel-6"
+                role="region"
+                aria-labelledby="faq-trigger-6"
+              >
+                <div class="accordion__body">
+                  <p class="accordion__text">
+                    Нет. Любые инвестиции связаны с рыночными рисками, поэтому
+                    PrimeInvest фокусируется на управлении рисками, дисциплине и
+                    прозрачном планировании, а не на нереалистичных обещаниях.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- О нас -->
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <div class="container about__grid">
+          <div class="about__media">
+            <img
+              src="assets/images/about-team.jpg"
+              alt="Команда PrimeInvest обсуждает аналитику и план запуска"
+              class="about__image"
+              width="720"
+              height="540"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="about__content">
+            <p class="section__eyebrow">О проекте</p>
+            <h2 class="section__title about__title" id="about-title">
+              О нас в PrimeInvest
+            </h2>
+            <p class="about__text">
+              PrimeInvest объединяет аналитиков и практиков, которые помогают
+              людям выстраивать понятную финансовую стратегию без суеты и
+              агрессивного маркетинга. Мы верим, что устойчивый результат
+              начинается с порядка в цифрах и ясных правил.
+            </p>
+            <p class="about__text">
+              Вместо «горячих советов из чатов» мы даём структурированный разбор
+              инструментов, сценариев поведения рынка и личных целей клиента.
+            </p>
+
+            <ul class="about__highlights">
+              <li class="about__highlight">
+                <strong class="about__metric">2 шага</strong>
+                <span class="about__label">до регистрации заявки на старт</span>
+              </li>
+              <li class="about__highlight">
+                <strong class="about__metric">100%</strong>
+                <span class="about__label">фокус на управлении рисками</span>
+              </li>
+            </ul>
+
+            <a
+              href="#lead-form"
+              class="button button--primary about__cta"
+              data-cta-button
+            >
+              Начать сейчас
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Форма лидогенерации -->
+      <section
+        class="section lead-section"
+        id="lead-form"
+        aria-labelledby="lead-title"
+      >
+        <div class="container lead-section__inner">
+          <div class="section__header lead-section__header">
+            <p class="section__eyebrow">Регистрация участия</p>
+            <h2 class="section__title" id="lead-title">
+              Получите доступ к запуску PrimeInvest
+            </h2>
+            <p class="section__subtitle">
+              Заполните два коротких шага — мы закрепим за вами место и свяжемся
+              для обсуждения деталей.
+            </p>
+          </div>
+
+          <div class="lead-card">
+            <!-- Индикатор шагов -->
+            <div class="stepper" aria-label="Прогресс заполнения формы">
+              <div
+                class="stepper__item stepper__item--active"
+                data-step-indicator="1"
+              >
+                <span class="stepper__num">1</span>
+                <span class="stepper__text">Имя и Email</span>
+              </div>
+              <div class="stepper__line" aria-hidden="true"></div>
+              <div class="stepper__item" data-step-indicator="2">
+                <span class="stepper__num">2</span>
+                <span class="stepper__text">Телефон и согласие</span>
+              </div>
+            </div>
+
+            <form class="lead-form" id="multiStepForm" novalidate>
+              <fieldset class="lead-form__step" data-step="1">
+                <legend class="visually-hidden">Шаг 1: Имя и Email</legend>
+
+                <div class="form-field">
+                  <label for="leadName" class="form-field__label">
+                    Ваше имя
+                  </label>
+                  <input
+                    type="text"
+                    id="leadName"
+                    name="name"
+                    class="form-field__input"
+                    placeholder="Например, Алексей"
+                    autocomplete="name"
+                    required
+                  />
+                  <span
+                    class="form-field__error"
+                    data-error-for="name"
+                    role="alert"
+                  ></span>
+                </div>
+
+                <div class="form-field">
+                  <label for="leadEmail" class="form-field__label">
+                    Электронная почта
+                  </label>
+                  <input
+                    type="email"
+                    id="leadEmail"
+                    name="email"
+                    class="form-field__input"
+                    placeholder="name@example.com"
+                    autocomplete="email"
+                    required
+                  />
+                  <span
+                    class="form-field__error"
+                    data-error-for="email"
+                    role="alert"
+                  ></span>
+                </div>
+
+                <div class="lead-form__actions">
+                  <button
+                    type="button"
+                    class="button button--primary lead-form__next"
+                    data-next-step
+                  >
+                    Далее
+                  </button>
+                </div>
+              </fieldset>
+
+              <fieldset class="lead-form__step is-hidden" data-step="2">
+                <legend class="visually-hidden">
+                  Шаг 2: Телефон и согласие
+                </legend>
+
+                <div class="form-field">
+                  <label for="leadCountry" class="form-field__label">
+                    Страна и код
+                  </label>
+                  <select
+                    id="leadCountry"
+                    name="country"
+                    class="form-field__select"
+                    data-country-select
+                  >
+                    <option value="UA" selected>Украина (+380)</option>
+                    <option value="PL">Польша (+48)</option>
+                    <option value="DE">Германия (+49)</option>
+                    <option value="US">США / Канада (+1)</option>
+                  </select>
+                </div>
+
+                <div class="form-field">
+                  <label for="leadPhone" class="form-field__label">
+                    Номер телефона
+                  </label>
+                  <input
+                    type="tel"
+                    id="leadPhone"
+                    name="phone"
+                    class="form-field__input"
+                    placeholder="+380 (XX) XXX-XX-XX"
+                    autocomplete="tel-national"
+                    inputmode="tel"
+                    data-phone-input
+                    required
+                  />
+                  <span
+                    class="form-field__error"
+                    data-error-for="phone"
+                    role="alert"
+                  ></span>
+                </div>
+
+                <div class="form-field">
+                  <label class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="leadConsent"
+                      name="consent"
+                      class="checkbox__input"
+                      required
+                    />
+                    <span class="checkbox__box" aria-hidden="true"></span>
+                    <span class="checkbox__text">
+                      Я соглашаюсь на обработку персональных данных и связь по
+                      заявке
+                    </span>
+                  </label>
+                  <span
+                    class="form-field__error"
+                    data-error-for="consent"
+                    role="alert"
+                  ></span>
+                </div>
+
+                <div class="lead-form__actions lead-form__actions--split">
+                  <button
+                    type="button"
+                    class="button button--secondary"
+                    data-prev-step
+                  >
+                    Назад
+                  </button>
+                  <button type="submit" class="button button--primary">
+                    Отправить заявку
+                  </button>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <a href="#" class="logo logo--footer">
+            <span class="logo__mark" aria-hidden="true"></span>
+            <span class="logo__text">PrimeInvest</span>
+          </a>
+          <p class="footer__copy">
+            Информационные материалы и разбор стратегий. Не является
+            индивидуальной инвестиционной рекомендацией.
+          </p>
+        </div>
+        <p class="footer__rights">© 2026 PrimeInvest. Все права защищены.</p>
+      </div>
+    </footer>
+
+    <!-- Модальное окно -->
+    <div
+      class="modal"
+      id="successModal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal__backdrop" data-modal-close></div>
+      <div class="modal__dialog" tabindex="-1">
+        <button
+          type="button"
+          class="modal__close"
+          data-modal-close
+          aria-label="Закрыть окно"
+        >
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <path d="M18 6L6 18" />
+            <path d="M6 6l12 12" />
+          </svg>
+        </button>
+
+        <div class="modal__icon" aria-hidden="true">
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+          >
+            <path d="M20 6L9 17l-5-5" />
+          </svg>
+        </div>
+
+        <h2 class="modal__title" id="modalTitle">Заявка принята</h2>
+        <p class="modal__text">
+          Спасибо! Мы получили ваши данные и свяжемся с вами в ближайшее время,
+          чтобы обсудить старт.
+        </p>
+
+        <button
+          type="button"
+          class="button button--primary modal__button"
+          data-modal-close
+        >
+          Хорошо
+        </button>
+      </div>
+    </div>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
