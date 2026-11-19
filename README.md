@@ -1,5 +1,7 @@
 # PrimeInvest — Landing Page
 
+**Live Demo:** [https://evgeniy45.github.io/PrimeInvest/](https://evgeniy45.github.io/PrimeInvest/)
+
 Одностраничный адаптивный лендинг под рекламный запуск **PrimeInvest**, выполненный на чистых **HTML, CSS и JavaScript** без сборщиков с использованием методологии **BEM** и подхода **mobile-first**.
 
 ## Что реализовано
@@ -37,17 +39,19 @@
 
 1. Клонируйте репозиторий или скачайте архив с проектом:
 
-```bash
-git clone [https://github.com/Evgeniy45/PrimeInvest](https://github.com/Evgeniy45/PrimeInvest)
-cd ВАШ_РЕПОЗИТОРИЙ
+```text
+git clone https://github.com/Evgeniy45/PrimeInvest.git
+cd PrimeInvest
 ```
 
-2. Откройте `index.html` напрямую в браузере **или** запустите локальный сервер:
+2. Откройте `index.html` напрямую в браузере.
+
+3. Либо запустите локальный сервер (рекомендуется при разработке):
 
 - **VS Code**: установите расширение _Live Server_, нажмите правой кнопкой по `index.html` и выберите _Open with Live Server_.
 - **Через терминал (если установлен Python)**:
 
-```bash
+```text
 python -m http.server 5500
 ```
 
